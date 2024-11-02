@@ -20,3 +20,9 @@ Route::get('/', function () {
 Route::get('/post/about', function () {
     return view('about');
 })->name('about');
+
+Route::get('user/{name?}', function ($name = null) {
+    $id = '1';
+    $data = compact('name', 'id');
+    return view('user', $data);
+});
