@@ -22,19 +22,9 @@
   
 
      <div class="container  text-center">
-        <h3>User Data</h3>
+   
 
-        @if($name=='Ali')
-        {{$id}}
-        {{'user Ali'}}
-
-        @elseif($name=='Dua')
-        {{$id}}
-        {{'user Dua'}}
-
-        @else('Invalid user')
-
-        @endif
+     
 
         @for($i=0; $i<=10; $i++)
       <h3>  {{$i}}</h3>
